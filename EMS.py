@@ -30,7 +30,7 @@ class Employee:
             print("Employee ID: " + bcolors.OKCYAN + str(self.id) + bcolors.ENDC)
             print("Employee name: " + bcolors.OKCYAN + self.firstName + " " + self.lastName + bcolors.ENDC)
             print("Employment date: " + bcolors.OKCYAN + self.employmentDate + bcolors.ENDC)
-            print("Employee salary: " + bcolors.OKCYAN + str(self.salary) + bcolors.ENDC)
+            print("Employee salary: " + bcolors.OKCYAN + "{:.2f}".format(self.salary) + bcolors.ENDC)
             print("Department name: " + bcolors.OKCYAN + self.department + "\n" + bcolors.ENDC)
       
       def getName(self):
